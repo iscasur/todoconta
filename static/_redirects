@@ -4,3 +4,16 @@
 https://gatsby-starter-ghost.netlify.com/*      https://gatsby.ghost.org/:splat    301!
 http://gatsby-starter-ghost.netlify.com/*       https://gatsby.ghost.org/:splat    301!
 /platzi/                                        https://platzi.com/r/iscasur/
+
+# Tienda
+/xmlcontpaq/                                    https://tienda.todoconta.com/producto/xml-a-contpaqi/
+/xmlctpqi/                                      https://tienda.todoconta.com/producto/xml-a-contpaqi/
+/xmlbot/                                        https://tienda.todoconta.com/producto/xml-bot/
+/xmlsatpremium/                                 https://tienda.todoconta.com/producto/xmlsat-premium/
+/xmlsat/                                        https://tienda.todoconta.com/producto/xmlsat/
+
+# Demos
+/xmlctpqi-demo/                                 https://bit.ly/2OWP5Zf
+/xmlbot-demo/                                   http://construsoft.mx/downloads/software/SetupXMLBOT.exe
+/xmlsatpremium-demo/                            http://softwarepaq2.com/downloads/todoconta/SetupXMLSAT_PREMIUM_TODOCONTA_541.exe
+/xmlsat-demo/                                   http://softwarepaq2.com/downloads/todoconta/SetupXMLSAT_TODOCONTA_540.exe
