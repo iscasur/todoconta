@@ -40,10 +40,16 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                             <div className="site-mast">
                                 <div className="site-mast-left">
                                     <Link to="/">
-                                        {site.logo ?
-                                            <img className="site-logo" src={site.logo} alt={site.title} />
-                                            : <Img fixed={data.file.childImageSharp.fixed} alt={site.title} />
-                                        }
+                                        <div class="site-header-top">
+                                            {/* site.logo ?
+                                                <img className="site-logo" src={site.logo} alt={site.title} />
+                                                : <Img fixed={data.file.childImageSharp.fixed} alt={site.title} />
+                                            */}
+                                            <div className="site-header-link">
+                                                <h1 className="site-banner-title">{site.title}</h1>
+                                                <p className="site-banner-desc">{site.description}</p>
+                                            </div>
+                                        </div>
                                     </Link>
                                 </div>
                                 <div className="site-mast-right">
@@ -52,19 +58,20 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                                     <a className="site-nav-item" href={ `https://feedly.com/i/subscription/feed/${config.siteUrl}/rss/` } target="_blank" rel="noopener noreferrer"><img className="site-nav-icon" src="/images/icons/rss.svg" alt="RSS Feed" /></a>
                                 </div>
                             </div>
-                            { isHome ?
+                            { /* isHome ?
                                 <div className="site-banner">
                                     <h1 className="site-banner-title">{site.title}</h1>
                                     <p className="site-banner-desc">{site.description}</p>
                                 </div> :
-                                null}
+                                null*/} 
                             <nav className="site-nav">
                                 <div className="site-nav-left">
                                     {/* The navigation items as setup in Ghost */}
                                     <Navigation data={site.navigation} navClass="site-nav-item" />
                                 </div>
                                 <div className="site-nav-right">
-                                    <Link className="site-nav-button" to="/about">About</Link>
+                                    <Link className="site-nav-button" to="/acerca">Acerca de</Link>
+                                    <Link className="site-nav-button" to="/suscribete">Suscribete</Link>
                                 </div>
                             </nav>
                         </div>

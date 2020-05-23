@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Helmet from 'react-helmet'
+import { Tags } from '@tryghost/helpers-gatsby'
 
 import { Layout } from '../components/common'
 import { MetaData } from '../components/common/meta'
@@ -30,8 +31,19 @@ const Post = ({ data, location }) => {
                     <article className="content">
                         
                         <header class="post-full-header">
+                        {post.tags && <div className="post-card-tags"> <Tags post={post} visibility="public" autolink={false} /></div>}
                         <h1 className="content-title">{post.title}</h1>
                         <p class="post-full-custom-excerpt">{post.excerpt}</p>
+                        <div className="post-full-byline">
+                            <div className="post-card-avatar">
+                                {post.primary_author.profile_image ?
+                                    <img className="author-profile-image" src={post.primary_author.profile_image} alt={post.primary_author.name}/> :
+                                    <img className="default-avatar" src="/images/icons/avatar.svg" alt={post.primary_author.name}/>
+                                }
+                            </div>
+                            <span>{ post.primary_author.name }</span>
+                            <span>{ post.date }</span>
+                        </div>
                         </header>
 
                         { post.feature_image ?
