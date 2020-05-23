@@ -566,7 +566,8 @@ h6 {
     font-weight: 300;
 }
 
-.post-full-content {
+.post-full-content,
+.post-comments {
     max-width: 720px;
     margin: 0 auto;
     background: #fff;

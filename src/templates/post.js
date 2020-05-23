@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Helmet from 'react-helmet'
 import { Tags } from '@tryghost/helpers-gatsby'
+import { DiscussionEmbed } from 'disqus-react'
 
 import { Layout } from '../components/common'
 import { MetaData } from '../components/common/meta'
@@ -57,6 +58,17 @@ const Post = ({ data, location }) => {
                                 className="content-body load-external-scripts"
                                 dangerouslySetInnerHTML={{ __html: post.html }}
                             />
+                        </section>
+
+                        <section class="post-comments">
+                        <DiscussionEmbed
+                            shortname='todoconta'
+                            config={ {
+                                url: post.url,
+                                identifier: post.id,
+                                title: post.title,
+                            } }
+                        />
                         </section>
                     </article>
                 </div>
