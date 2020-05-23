@@ -28,13 +28,18 @@ const Post = ({ data, location }) => {
             <Layout>
                 <div className="container">
                     <article className="content">
-                        { post.feature_image ?
-                            <figure className="post-feature-image">
-                                <img src={ post.feature_image } alt={ post.title } />
-                            </figure> : null }
-                        <section className="post-full-content">
-                            <h1 className="content-title">{post.title}</h1>
+                        
+                        <header class="post-full-header">
+                        <h1 className="content-title">{post.title}</h1>
+                        <p class="post-full-custom-excerpt">{post.excerpt}</p>
+                        </header>
 
+                        { post.feature_image ?
+                        <figure className="post-feature-image">
+                            <img src={ post.feature_image } alt={ post.title } />
+                        </figure> : null }
+
+                        <section className="post-full-content">
                             {/* The main post content */ }
                             <section
                                 className="content-body load-external-scripts"
