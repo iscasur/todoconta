@@ -7,8 +7,21 @@ import Img from 'gatsby-image'
 import { Navigation } from '.'
 import config from '../../utils/siteConfig'
 
+import Analytics from 'analytics'
+import googleAnalytics from '@analytics/google-analytics'
+
 // Styles
 import '../../styles/app.css'
+
+const analytics = Analytics({
+    app: 'todoconta',
+    plugins: [
+      googleAnalytics({
+        trackingId: 'UA-138017682-1'
+      })
+    ]
+  })
+  
 
 /**
 * Main layout component
