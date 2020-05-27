@@ -290,9 +290,16 @@ table {
     border-spacing: 0;
     border-collapse: collapse;
 }
+table th {
+    text-transform: capitalize;
+    text-align: center;
+    font-weight: 700;
+}
 td,
 th {
-    padding: 0;
+    padding: 0.5em;
+    border: 0px;
+    word-break: break-word;
 }
 
 /* Defaults
@@ -338,6 +345,24 @@ hr {
     height: 1px;
     border: 0;
     border-top: 1px solid #e3e9ed;
+}
+
+.post-full-content hr {
+    background: none!important;
+    border: none;
+    text-align: center;
+    max-width: none;
+    line-height: 1;
+    height: auto;
+}
+    
+.post-full-content hr:before {
+    content: "\00b7 \00b7 \00b7";
+    color: var(--color-base);
+    font-size: 20px;
+    letter-spacing: 1em;
+    padding-left: 1em;
+    font-family: serif;
 }
 
 audio,
@@ -545,6 +570,108 @@ h6 {
     border-top-right-radius: 3px;
 }
 
+.post-full-byline-meta {
+    display: flex;
+    align-items: center;
+    margin: 2px 0 0;
+    font-size: 1.2rem;
+    line-height: 1.2em;
+    letter-spacing: 0.2px;
+    text-transform: uppercase;
+    padding-top: 15px;
+    border-top: 1px solid color(var(--color-secondary));
+}
+
+.post-full-byline-meta h4 {
+    margin: 0 0 3px;
+    font-size: 1.3rem;
+    line-height: 1.4em;
+    font-weight: 500;
+}
+
+.author-profile-image,
+.avatar-wrapper {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: color(var(--lightgrey) l(+10%));
+    border-radius: 100%;
+
+    object-fit: cover;
+}
+
+.post-card-meta .profile-image-wrapper,
+.post-card-meta .avatar-wrapper {
+    position: relative;
+}
+
+.author-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 4px;
+    padding: 0;
+    list-style: none;
+}
+
+.author-list-item {
+    position: relative;
+    flex-shrink: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.author-avatar {
+    display: block;
+    overflow: hidden;
+    width: 48px;
+    height: 48px;
+    border: #fff 2px solid;
+    border-radius: 100%;
+    transition: all 0.5s cubic-bezier(0.4, 0.01, 0.165, 0.99) 700ms;
+}
+
+/* # Content Boxes
+------------------------- */
+
+.content-box-blue,
+.content-box-gray,
+.content-box-red,
+.content-box-yellow {
+	border: 1px solid;
+	border-radius: 3px;
+	background-color: transparent;
+    margin: 0 0 40px;
+	/* overflow: hidden; */
+    padding: 20px;
+}
+
+.content-box-blue p:last-child,
+.content-box-gray p:last-child,
+.content-box-red p:last-child,
+.content-box-yellow p:last-child {
+	margin-bottom: 0;
+}
+
+.content-box-blue {
+	border-color: #B3DFFF;
+	background: #f7ffff;
+}
+
+.content-box-gray {
+    background-color: #fdfdfd;
+    border: 1px solid #ddd;
+}
+
+.content-box-red {
+	border-color: #ff7674;
+	background: #fff1f1;
+}
+ 
+.content-box-yellow {
+	border-color: #FFE6A3;
+    background: #fffeee;
+}
+
 @media (max-width: 500px) {
     .post-full-header {
         padding: 20px 0 35px;
@@ -560,7 +687,7 @@ h6 {
 .post-full-custom-excerpt {
     margin: 20px 0 0;
     color: #738a94;
-    font-family: var(--font-serif);
+    font-family: var(--font-sans-serif);
     font-size: 2.3rem;
     line-height: 1.4em;
     font-weight: 300;

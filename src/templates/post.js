@@ -35,15 +35,23 @@ const Post = ({ data, location }) => {
                         {post.tags && <div className="post-card-tags"> <Tags post={post} visibility="public" autolink={false} /></div>}
                         <h1 className="content-title">{post.title}</h1>
                         <p class="post-full-custom-excerpt">{post.excerpt}</p>
-                        <div className="post-full-byline">
-                            <div className="post-card-avatar">
-                                {post.primary_author.profile_image ?
-                                    <img className="author-profile-image" src={post.primary_author.profile_image} alt={post.primary_author.name}/> :
-                                    <img className="default-avatar" src="/images/icons/avatar.svg" alt={post.primary_author.name}/>
-                                }
+                        <div className="post-full-byline-meta">
+                            <div>
+                                <ul class="author-list">
+                                    <li class="author-list-item">
+                                        <div class="author-card">
+                                            {post.primary_author.profile_image ?
+                                                <img className="author-avatar" src={post.primary_author.profile_image} alt={post.primary_author.name}/> :
+                                                <img className="default-avatar" src="/images/icons/avatar.svg" alt={post.primary_author.name}/>
+                                            }
+                                        </div>
+                                    </li>
+                                </ul>
                             </div>
-                            <span>{ post.primary_author.name }</span>
-                            <span>{ post.date }</span>
+                            <div>
+                                <h4 className="author-name">{ post.primary_author.name }</h4>
+                                <span className="byline-meta-date">{ post.created_at_pretty }</span>
+                            </div>
                         </div>
                         </header>
 
@@ -60,7 +68,7 @@ const Post = ({ data, location }) => {
                             />
                         </section>
 
-                        <section class="post-comments">
+                        <section className="post-comments">
                         <DiscussionEmbed
                             shortname='todoconta'
                             config={ {
