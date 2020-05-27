@@ -694,10 +694,25 @@ h6 {
 }
 
 .post-full-content,
-.post-comments {
+.post-share {
     max-width: 720px;
     margin: 0 auto;
     background: #fff;
+}
+
+.post-comments {
+    padding: 2em 0;
+    max-width: 720px;
+    margin: 0 auto;
+    background: var(--color-bg);
+}
+
+.comments {
+    background: var(--color-bg);
+}
+
+.post-share {
+    padding: 2em 0;
 }
 
 .post-feature-image img {
