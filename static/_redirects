@@ -30,6 +30,9 @@ http://gatsby-starter-ghost.netlify.com/*       https://gatsby.ghost.org/:splat 
 /xmlbot/                                        https://tienda.todoconta.com/producto/xml-bot/
 /xmlsatpremium/                                 https://tienda.todoconta.com/producto/xmlsat-premium/
 /xmlsat/                                        https://tienda.todoconta.com/producto/xmlsat/
+/cfdifacturas/                                  https://tienda.todoconta.com/producto/facturacion-electronica-software/
+/cfdinominas/                                   https://tienda.todoconta.com/producto/facturacion-electronica-software/?attribute_software=CFDI+N%C3%B3minas
+/cfdirecibos/                                   https://tienda.todoconta.com/producto/facturacion-electronica-software/?attribute_software=CFDI+Recibos
 
 # Demos
 /cfdifacturas-demo/                             https://www.todocfdi.com.mx/demo/xcfdifacturas/index.html
