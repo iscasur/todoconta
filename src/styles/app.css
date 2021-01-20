@@ -563,7 +563,7 @@ h6 {
 
 .content-post {
   display: grid;
-  grid-template-columns: 3fr 1fr;
+  grid-template-columns: 2fr 1fr;
 }
 
 .post-full-header {
@@ -641,6 +641,31 @@ h6 {
 .suscribe {
   background: var(--color-bg);
   padding: 1em;
+}
+
+.post-tools ul {
+  padding: 0;
+}
+
+.post-tools li {
+  list-style: none;
+  margin: 0 0 1.6rem;
+  padding: 0.3em;
+}
+
+.post-tools h3 {
+  margin: 0;
+  font-size: 1.6rem;
+}
+
+.post-tools p {
+  font-size: 1.4rem;
+  margin: 0;
+}
+
+.post-tools a {
+  color: var(--color-base);
+  text-decoration: none;
 }
 
 /* # Content Boxes
@@ -725,7 +750,7 @@ h6 {
   max-width: 1040px;
   width: 100%;
   height: auto;
-  margin: 0 0 60px;
+  /* margin: 0 0 60px; */
 }
 
 .content-body h1,

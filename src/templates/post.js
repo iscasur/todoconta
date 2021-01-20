@@ -29,6 +29,13 @@ const Post = ({ data, location }) => {
 				<style type="text/css">{`${post.codeinjection_styles}`}</style>
 			</Helmet>
 			<Layout>
+				<div className="container content-top">
+					<ins class="adsbygoogle"
+						data-ad-client="ca-pub-7017426929740089"
+						data-ad-slot="5357438199"
+						data-ad-format="auto"
+						data-full-width-responsive="true"></ins>
+				</div>
 				<div className="container content-post">
 					<article className="content">
 
@@ -118,6 +125,28 @@ const Post = ({ data, location }) => {
 						</section>
 						<section className="post-lists">
 
+						</section>
+						<section className="post-tools">
+							<ul>
+								<li className="tool">
+									<a href="https://todoconta.com/xmlsatpremium/">
+										<h3>✨ Descarga miles de comprobantes fiscales</h3>
+										<p>XMLSAT Premium para la auditoría y administración masiva de tus comprobantes fiscales.</p>
+									</a>
+								</li>
+								<li className="tool">
+									<a href="https://todoconta.com/xmlcontpaq/">
+										<h3>💻 Genera miles de pólizas Contpaqi</h3>
+										<p>Contabiliza todos tus archivos XML y genera pólizas Contpaq i® Contabilidad.</p>
+									</a>
+								</li>
+								<li className="tool">
+									<a href="https://todoconta.com/controlxml/">
+										<h3>📊 Generar reportes en Excel de tus CFDI</h3>
+										<p>Extrae información de los comprobantes fiscales y genera reportes de forma profesional.</p>
+									</a>
+								</li>
+							</ul>
 						</section>
 					</aside>
 				</div>

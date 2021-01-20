@@ -25,6 +25,7 @@ http://gatsby-starter-ghost.netlify.com/*       https://gatsby.ghost.org/:splat 
 /wss/                                           https://todoconta.com/web-service-sat/
 
 # Tienda
+/controlxml/                                    https://tienda.todoconta.com/producto/control-xml-cfdi/
 /xmlcontpaq/                                    https://tienda.todoconta.com/producto/xml-a-contpaqi/
 /xmlctpqi/                                      https://tienda.todoconta.com/producto/xml-a-contpaqi/
 /xmlbot/                                        https://tienda.todoconta.com/producto/xml-bot/
