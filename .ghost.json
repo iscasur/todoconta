@@ -1,12 +1,12 @@
 {
   "development": {
-    "apiUrl": "https://todoconta.herokuapp.com",
-    "contentApiKey": "826c4b01bc6368826dc0eb6559",
+    "apiUrl": "https://contasoy.herokuapp.com",
+    "contentApiKey": "8b45e4dac723b621d3127e91de",
     "version": "v3"
   },
   "production": {
-    "apiUrl": "https://todoconta.herokuapp.com",
-    "contentApiKey": "826c4b01bc6368826dc0eb6559",
+    "apiUrl": "https://contasoy.herokuapp.com",
+    "contentApiKey": "8b45e4dac723b621d3127e91de",
     "version": "v3"
   }
 }
