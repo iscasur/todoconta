@@ -567,6 +567,12 @@ h6 {
   grid-template-columns: 2fr 1fr;
 }
 
+@media (max-width: 680px) {
+  .content-post {
+  grid-template-columns: 1fr;
+  }
+}
+
 .post-full-header {
   position: relative;
   margin: 0 auto;
@@ -637,6 +643,12 @@ h6 {
 
 .sidebar {
   padding: 0 0 0 1.5em;
+}
+
+@media (max-width: 680px) {
+  .sidebar {
+    padding: 0;
+  }
 }
 
 .suscribe {

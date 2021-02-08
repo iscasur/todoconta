@@ -130,19 +130,19 @@ const Post = ({ data, location }) => {
 							<h3>💻 Herramientas</h3>
 							<ul>
 								<li className="tool">
-									<a href="https://todoconta.com/xmlsatpremium/">
+									<a href="https://todoconta.com/xmlsatpremium" target="_blank">
 										<h3>Descarga miles de comprobantes</h3>
 										<p>Auditoría y administración masiva de tus comprobantes fiscales.</p>
 									</a>
 								</li>
 								<li className="tool">
-									<a href="https://todoconta.com/xmlcontpaq/">
+									<a href="https://todoconta.com/xmlcontpaq" target="_blank">
 										<h3>Genera miles de pólizas Contpaqi</h3>
 										<p>Contabiliza todos tus archivos XML y genera pólizas Contpaq i® Contabilidad.</p>
 									</a>
 								</li>
 								<li className="tool">
-									<a href="https://todoconta.com/controlxml/">
+									<a href="https://todoconta.com/controlxml" target="_blank">
 										<h3>Generar reportes en Excel de tus CFDI</h3>
 										<p>Extrae información de los XML y genera reportes de forma profesional.</p>
 									</a>
