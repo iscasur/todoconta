@@ -26,27 +26,41 @@ http://gatsby-starter-ghost.netlify.com/*       https://gatsby.ghost.org/:splat 
 # Blog
 /csd/                                           https://todoconta.com/certificado-sello-digital-csd/
 /wss/                                           https://todoconta.com/web-service-sat/
+/mc/                                            https://todoconta.com/marca-personal/
 
 # Tienda
+## ETT
 /controlxml/                                    https://tienda.todoconta.com/producto/control-xml-cfdi/
-/xmlcontpaq/                                    https://tienda.todoconta.com/producto/xml-a-contpaqi/
+/controlxmlnom/                                 https://tienda.todoconta.com/producto/control-xml-nomina/
+/conciliarep/                                   https://tienda.todoconta.com/producto/conciliarep/
 /xmlctpqi/                                      https://tienda.todoconta.com/producto/xml-a-contpaqi/
+/xmlcontpaq/                                    https://tienda.todoconta.com/producto/xml-a-contpaqi/
+
+## Construsoft
 /xmlbot/                                        https://tienda.todoconta.com/producto/xml-bot/
 /xmlsatpremium/                                 https://tienda.todoconta.com/producto/xmlsat-premium/
 /xmlsat/                                        https://tienda.todoconta.com/producto/xmlsat/
+
+## Sofwtare de facturación
 /cfdifacturas/                                  https://tienda.todoconta.com/producto/facturacion-electronica-software/
 /cfdinominas/                                   https://tienda.todoconta.com/producto/facturacion-electronica-software/?attribute_software=CFDI+N%C3%B3minas
 /cfdirecibos/                                   https://tienda.todoconta.com/producto/facturacion-electronica-software/?attribute_software=CFDI+Recibos
 
+
 # Demos
+## Sofwtare de facturación
 /cfdifacturas-demo/                             https://www.todocfdi.com.mx/demo/xcfdifacturas/index.html
 /cfdinominas-demo/                              http://www.todocfdi.com.mx/demo/cfdinomina2018/index.html
 /cfdirecibos-demo/                              https://www.todocfdi.com.mx/demo/xcfdihonorarios/index.html
-/conciliarep-demo/                              https://go.aws/2yqPc9a
-/controlxmlnom-demo/                            https://go.aws/2VETCB3
-/controlxml-demo/                               https://go.aws/34NgqTq
-/xmlcontpaq-demo/                               https://bit.ly/2OWP5Zf
-/xmlctpqi-demo/                                 https://bit.ly/2OWP5Zf
+
+## ETT
+/xmlctpqi-demo/                                 https://bit.ly/2Ly9ioI
+/xmlcontpaq-demo/                               https://bit.ly/2Ly9ioI
+/controlxml-demo/                               https://bit.ly/3q6Orb4
+/controlxmlnom-demo/                            https://bit.ly/3rFHC0q
+/conciliarep-demo/                              https://bit.ly/37eQ2ED
+
+## Construsoft
 /xmlbot-demo/                                   http://construsoft.mx/downloads/software/SetupXMLBOT.exe
 /xmlsatpremium-demo/                            http://softwarepaq2.com/downloads/software/SetupXMLSAT_PREMIUM.exe
 /xmlsat-demo/                                   http://softwarepaq2.com/downloads/software/SetupXMLSAT.exe
