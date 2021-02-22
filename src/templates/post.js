@@ -9,6 +9,8 @@ import { InlineShareButtons } from 'sharethis-reactjs'
 import { Layout } from '../components/common'
 import { MetaData } from '../components/common/meta'
 
+import MailchimpComponent from '../components/common/meta/Mailchimp'
+
 /**
 * Single post view (/:slug)
 *
@@ -76,6 +78,7 @@ const Post = ({ data, location }) => {
 							/>
 						</section>
 
+
 						<section className="post-share">
 							<InlineShareButtons
 								config={{
@@ -105,6 +108,12 @@ const Post = ({ data, location }) => {
 							/>
 						</section>
 
+						<section className="suscribe">
+							<div className="suscribe-content">
+								<MailchimpComponent />
+							</div>
+						</section>
+
 						<section className="comments">
 							<section className="post-comments">
 								<DiscussionEmbed
@@ -118,38 +127,6 @@ const Post = ({ data, location }) => {
 							</section>
 						</section>
 					</article>
-					<aside className="sidebar">
-						<section className="suscribe">
-							<h3>Suscríbete</h3>
-							<p>No te pierdas nuestro contenido</p>
-						</section>
-						<section className="post-lists">
-
-						</section>
-						<section className="post-tools">
-							<h3>💻 Herramientas</h3>
-							<ul>
-								<li className="tool">
-									<a href="https://todoconta.com/xmlsatpremium" target="_blank">
-										<h3>Descarga miles de comprobantes</h3>
-										<p>Auditoría y administración masiva de tus comprobantes fiscales.</p>
-									</a>
-								</li>
-								<li className="tool">
-									<a href="https://todoconta.com/xmlcontpaq" target="_blank">
-										<h3>Genera miles de pólizas Contpaqi</h3>
-										<p>Contabiliza todos tus archivos XML y genera pólizas Contpaq i® Contabilidad.</p>
-									</a>
-								</li>
-								<li className="tool">
-									<a href="https://todoconta.com/controlxml" target="_blank">
-										<h3>Generar reportes en Excel de tus CFDI</h3>
-										<p>Extrae información de los XML y genera reportes de forma profesional.</p>
-									</a>
-								</li>
-							</ul>
-						</section>
-					</aside>
 				</div>
 			</Layout>
 		</>

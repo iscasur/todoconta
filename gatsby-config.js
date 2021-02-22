@@ -179,10 +179,21 @@ module.exports = {
                 addUncaughtPages: true,
             },
         },
+        // Adsense.
+        // See 
         {
             resolve: `gatsby-plugin-google-adsense`,
             options: {
                 publisherId: `ca-pub-7017426929740089`
+            },
+        },
+        // Mailchimp
+        // https://www.gatsbyjs.com/plugins/gatsby-plugin-mailchimp/
+        {
+            resolve: 'gatsby-plugin-mailchimp',
+            options: {
+                endpoint: 'https://todoconta.us6.list-manage.com/subscribe/post?u=698df7b66a9abf3442cb05248&amp;id=0330ab3b10', //
+                timeout: 3500, //
             },
         },
         `gatsby-plugin-catch-links`,

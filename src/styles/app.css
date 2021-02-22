@@ -562,7 +562,7 @@ h6 {
   line-height: 1.7em;
 }
 
-.content-post {
+/* .content-post {
   display: grid;
   grid-template-columns: 2fr 1fr;
 }
@@ -571,12 +571,12 @@ h6 {
   .content-post {
   grid-template-columns: 1fr;
   }
-}
+} */
 
 .post-full-header {
   position: relative;
   margin: 0 auto;
-  /* max-width: 720px; */
+  max-width: 720px;
   padding: 30px 20px 50px 0;
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
@@ -651,41 +651,6 @@ h6 {
   }
 }
 
-.suscribe {
-  background: var(--color-bg);
-  padding: 1em;
-}
-
-.post-tools ul {
-  padding: 0;
-}
-
-.post-tools li {
-  list-style: none;
-  margin: 0 0 1.6rem;
-  padding: 0.5rem 0 2rem;
-  border-bottom: 1px solid #ccc;
-}
-
-.tool h3 {
-  margin: 0;
-  color: var(--color-link);
-}
-
-.post-tools p {
-  font-size: 1.4rem;
-  margin: 0;
-}
-
-.post-tools a {
-  color: var(--color-base);
-  text-decoration: none;
-}
-
-.post-tools a:hover h3 {
-  text-decoration: underline;
-}
-
 /* # Content Boxes
 ------------------------- */
 
@@ -728,6 +693,12 @@ h6 {
   background: #fffeee;
 }
 
+/* # Media iframes
+------------------------- */
+.twitter-tweet {
+  margin: 0 auto;
+}
+
 @media (max-width: 500px) {
   .post-full-header {
   padding: 20px 0 35px;
@@ -751,9 +722,52 @@ h6 {
 
 .post-full-content,
 .post-share,
+.suscribe,
 .post-comments {
-  /* max-width: 720px; */
-  padding: 30px 20px 50px 0;
+  margin: 0 auto;
+  max-width: 720px;
+}
+
+.suscribe {
+  background-color: rgb(28, 45, 67);
+  border-radius: 1rem;
+  padding: 6rem;
+  text-align: center;
+}
+
+.suscribe-content {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.suscribe h3 {
+  margin: 0 0 0.5em 0;
+  font-size: 3rem;
+  color: var(--color-border);;
+}
+
+.suscribe p {
+  color: var(--color-border);;
+}
+
+.suscribe p:last-child {
+  margin-bottom: 0;
+}
+
+.suscribe input {
+  width: calc(100%/3);
+  border: 0;
+  padding: 1rem;
+  margin-right: 0.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 0.3rem;
+}
+
+.suscribe input[type="submit"] {
+  background: rgb(0, 177, 157);
+  color: #fff;
+  text-transform: uppercase;
+  width: 20%;
 }
 
 .post-comments {
@@ -768,7 +782,7 @@ h6 {
   max-width: 1040px;
   width: 100%;
   height: auto;
-  /* margin: 0 0 60px; */
+  margin: 0 0 4rem;
 }
 
 .content-body h1,
