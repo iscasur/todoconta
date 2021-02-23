@@ -192,7 +192,7 @@ module.exports = {
         {
             resolve: 'gatsby-plugin-mailchimp',
             options: {
-                endpoint: 'https://todoconta.us6.list-manage.com/subscribe/post?u=698df7b66a9abf3442cb05248&amp;id=0330ab3b10', //
+                endpoint: 'https://todoconta.us6.list-manage.com/subscribe/post?u=698df7b66a9abf3442cb05248&amp;id=4b9fb1f541', //
                 timeout: 3500, //
             },
         },

@@ -743,7 +743,7 @@ h6 {
 .suscribe h3 {
   margin: 0 0 0.5em 0;
   font-size: 3rem;
-  color: var(--color-border);;
+  color: var(--color-bg);;
 }
 
 .suscribe p {
@@ -754,6 +754,10 @@ h6 {
   margin-bottom: 0;
 }
 
+.suscribe small {
+  font-size: 1.2rem;
+}
+
 .suscribe input {
   width: calc(100%/3);
   border: 0;
@@ -761,6 +765,7 @@ h6 {
   margin-right: 0.5rem;
   margin-bottom: 1.5rem;
   border-radius: 0.3rem;
+  font-size: 1.6rem;
 }
 
 .suscribe input[type="submit"] {
@@ -768,6 +773,16 @@ h6 {
   color: #fff;
   text-transform: uppercase;
   width: 20%;
+}
+
+@media (max-width: 500px) {
+  .suscribe {
+    padding: 3rem;
+  }
+  .suscribe input,
+  .suscribe input[type="submit"] {
+    width: 100%;
+  }
 }
 
 .post-comments {

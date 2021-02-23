@@ -3,8 +3,9 @@ import addToMailchimp from 'gatsby-plugin-mailchimp'
 
 export default class MailchimpComponent extends React.Component {
   state = {
-    name: null,
+    fname: null,
     email: null,
+    message: 'Únete a nuestro newsletter',
   }
 
   _handleChange = e => {
@@ -21,6 +22,8 @@ export default class MailchimpComponent extends React.Component {
 
     console.log('submit', this.state)
 
+    this.setState({ message: '¡Gracias por suscribirte! ⭐️' })
+
     addToMailchimp(this.state.email, this.state) // listFields are optional if you are only capturing the email address.
       .then(({ msg, result }) => {
         console.log('msg', `${result}: ${msg}`)
@@ -35,17 +38,20 @@ export default class MailchimpComponent extends React.Component {
         console.log('err', err)
         alert(err)
       })
+
+    this.setState({ fname: null })
+    this.setState({ email: null })
   }
 
   render() {
     return (
       <>
-        <h3>Suscríbete</h3>
-        <p>Regístrate y recibe nuestro contenido para liberarte del estrés del despacho y cumplir con todas tus actividades.</p>
+        <h3>{this.state.message}</h3>
+        <p>Recibe nuestro contenido y libérate del estrés del trabajo.</p>
         <form onSubmit={this._handleSubmit}>
-          <input type="text" onChange={this._handleChange} placeholder="Nombre" name="name" />
-          <input type="email" onChange={this._handleChange} placeholder="Correo electrónico" name="email" />
-          <input type="submit" />
+          <input type="text" onChange={this._handleChange} placeholder="Nombre (sin apellidos)" name="fname" value={this.state.fname} />
+          <input type="email" onChange={this._handleChange} placeholder="Correo electrónico" name="email" value={this.state.email} />
+          <input type="submit" value="¡Me uno!" />
           <p><small>Puedes darte de baja en cualquier momento, sin resentimientos</small></p>
         </form>
       </>
