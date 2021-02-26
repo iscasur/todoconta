@@ -1061,6 +1061,17 @@ h6 {
   }
   .post-card:nth-child(1) {
     grid-column: 1 / span 6;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+  }
+
+  .post-card:nth-child(1) .post-card-image {
+    height: 270px;
+  }
+
+  .post-card:nth-child(1) .post-card-title {
+    font-size: 4rem;
   }
   
   .post-card:nth-child(2) {

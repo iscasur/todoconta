@@ -1,7 +1,7 @@
 module.exports = {
     siteUrl: `https://todoconta.com`, // Site domain. Do not include a trailing slash!
 
-    postsPerPage: 12, // Number of posts shown on paginated pages (changes this requires sometimes to delete the cache)
+    postsPerPage: 9, // Number of posts shown on paginated pages (changes this requires sometimes to delete the cache)
 
     siteTitleMeta: `Todoconta`, // This allows an alternative site title for meta data for pages.
     siteDescriptionMeta: `Información contable y fiscal (México)`, // This allows an alternative site description for meta data for pages.
