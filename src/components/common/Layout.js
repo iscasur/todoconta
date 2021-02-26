@@ -71,7 +71,7 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                                     {site.facebook && <a href={facebookUrl} className="site-nav-item" target="_blank" rel="noopener noreferrer"><img className="site-nav-icon" src="/images/icons/facebook.svg" alt="Facebook" /></a>}
                                     <a className="site-nav-item" href={`https://feedly.com/i/subscription/feed/${config.siteUrl}/rss/`} target="_blank" rel="noopener noreferrer"><img className="site-nav-icon" src="/images/icons/rss.svg" alt="RSS Feed" /></a> */}
 									<Navigation data={site.navigation} navClass="site-nav-item" />
-									<Link className="site-nav-button" to="/suscribete/">Suscribete</Link>
+									<Link className="site-nav-button" to="https://mailchi.mp/todoconta/suscribete">Suscribete</Link>
 								</div>
 							</div>
 							{ /* isHome ?
