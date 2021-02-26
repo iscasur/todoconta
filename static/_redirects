@@ -26,7 +26,7 @@ http://gatsby-starter-ghost.netlify.com/*       https://gatsby.ghost.org/:splat 
 # Blog
 /csd/                                           https://todoconta.com/certificado-sello-digital-csd/
 /wss/                                           https://todoconta.com/web-service-sat/
-/mc/                                            https://todoconta.com/marca-personal/
+/mp/                                            https://todoconta.com/marca-personal/
 /suscribete/                                    https://mailchi.mp/todoconta/suscribete
 
 # Tienda

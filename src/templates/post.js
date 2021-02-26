@@ -9,7 +9,7 @@ import { InlineShareButtons } from 'sharethis-reactjs'
 import { Layout } from '../components/common'
 import { MetaData } from '../components/common/meta'
 
-import MailchimpComponent from '../components/common/meta/Mailchimp'
+import MailchimpComponent from '../components/common/Mailchimp'
 
 /**
 * Single post view (/:slug)
