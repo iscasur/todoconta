@@ -107,9 +107,9 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
 							<div className="site-foot-nav-left">
 								<Link to="/">{site.title}</Link> – {site.description} © 2020
                             </div>
-							<div className="site-foot-nav-right">
+							{/* <div className="site-foot-nav-right">
 								<Navigation data={site.navigation} navClass="site-foot-nav-item" />
-							</div>
+							</div> */}
 						</div>
 					</footer>
 
