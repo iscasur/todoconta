@@ -907,6 +907,22 @@ h6 {
   font-weight: 700;
 }
 
+.content-body figure a {
+  border-bottom: 0;
+  padding: 0;
+}
+
+.content-body figure:hover .kg-bookmark-title {
+  color: var(--color-bg);
+}
+
+.content-body figcaption {
+  font-size: 1.4rem;
+  font-weight: var(--font-normal);
+  text-align: center;
+  margin-top: 1rem;
+}
+
 .content-body pre {
   margin: 0.4em 0 1.8em;
   font-size: 1.6rem;
