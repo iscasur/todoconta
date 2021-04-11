@@ -1,34 +1,39 @@
-const path = require(`path`)
+const path = require(`path`);
 
-const config = require(`./src/utils/siteConfig`)
-const generateRSSFeed = require(`./src/utils/rss/generate-feed`)
+const config = require(`./src/utils/siteConfig`);
+const generateRSSFeed = require(`./src/utils/rss/generate-feed`);
 
-let ghostConfig
+let ghostConfig;
 
 try {
-    ghostConfig = require(`./.ghost`)
+    ghostConfig = require(`./.ghost`);
 } catch (e) {
     ghostConfig = {
         production: {
             apiUrl: process.env.GHOST_API_URL,
             contentApiKey: process.env.GHOST_CONTENT_API_KEY,
         },
-    }
+    };
 } finally {
-    const { apiUrl, contentApiKey } = process.env.NODE_ENV === `development` ? ghostConfig.development : ghostConfig.production
+    const { apiUrl, contentApiKey } =
+        process.env.NODE_ENV === `development`
+            ? ghostConfig.development
+            : ghostConfig.production;
 
     if (!apiUrl || !contentApiKey || contentApiKey.match(/<key>/)) {
-        throw new Error(`GHOST_API_URL and GHOST_CONTENT_API_KEY are required to build. Check the README.`) // eslint-disable-line
+        throw new Error(
+            `GHOST_API_URL and GHOST_CONTENT_API_KEY are required to build. Check the README.`
+        ); // eslint-disable-line
     }
 }
 
 /**
-* This is the place where you can tell Gatsby which plugins to use
-* and set them up the way you want.
-*
-* Further info 👉🏼 https://www.gatsbyjs.org/docs/gatsby-config/
-*
-*/
+ * This is the place where you can tell Gatsby which plugins to use
+ * and set them up the way you want.
+ *
+ * Further info 👉🏼 https://www.gatsbyjs.org/docs/gatsby-config/
+ *
+ */
 module.exports = {
     siteMetadata: {
         siteUrl: config.siteUrl,
@@ -104,9 +109,7 @@ module.exports = {
                     }
                 }
               `,
-                feeds: [
-                    generateRSSFeed(config),
-                ],
+                feeds: [generateRSSFeed(config)],
             },
         },
         {
@@ -179,20 +182,28 @@ module.exports = {
                 addUncaughtPages: true,
             },
         },
+        // Facebook pixel
+        {
+            resolve: `gatsby-plugin-facebook-pixel`,
+            options: {
+                pixelId: "2517558688552094",
+            },
+        },
         // Adsense.
-        // See 
+        // See
         {
             resolve: `gatsby-plugin-google-adsense`,
             options: {
-                publisherId: `ca-pub-7017426929740089`
+                publisherId: `ca-pub-7017426929740089`,
             },
         },
         // Mailchimp
         // https://www.gatsbyjs.com/plugins/gatsby-plugin-mailchimp/
         {
-            resolve: 'gatsby-plugin-mailchimp',
+            resolve: "gatsby-plugin-mailchimp",
             options: {
-                endpoint: 'https://todoconta.us6.list-manage.com/subscribe/post?u=698df7b66a9abf3442cb05248&amp;id=4b9fb1f541', //
+                endpoint:
+                    "https://todoconta.us6.list-manage.com/subscribe/post?u=698df7b66a9abf3442cb05248&amp;id=4b9fb1f541", //
                 timeout: 3500, //
             },
         },
@@ -201,4 +212,4 @@ module.exports = {
         `gatsby-plugin-force-trailing-slashes`,
         `gatsby-plugin-offline`,
     ],
-}
+};

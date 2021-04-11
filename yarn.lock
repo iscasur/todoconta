@@ -6173,6 +6173,11 @@
     "babel-preset-gatsby-package" "^0.1.2"
     "cross-env" "^5.2.0"
 
+"gatsby-plugin-facebook-pixel@^1.0.5":
+  "integrity" "sha512-EFozZ47iskV1zIfNz7XGYGYhh0Mhfi9S1rswbRPefnc0s/NhQqVa45Ky82eM2M8yxiICS3BAmI1rS5dFDDNT7Q=="
+  "resolved" "https://registry.npmjs.org/gatsby-plugin-facebook-pixel/-/gatsby-plugin-facebook-pixel-1.0.5.tgz"
+  "version" "1.0.5"
+
 "gatsby-plugin-feed@2.5.3":
   "integrity" "sha512-2Lr6eIabdatrPDQv6nCG6da+yMyU8jO9ZQcarjzUXt3DVrOoRVVj60rcj9U6j2J5acjuSL0aw1nIp+Tp6jxsDA=="
   "resolved" "https://registry.npmjs.org/gatsby-plugin-feed/-/gatsby-plugin-feed-2.5.3.tgz"
