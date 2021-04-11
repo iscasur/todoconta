@@ -30,6 +30,7 @@ http://gatsby-starter-ghost.netlify.com/*       https://gatsby.ghost.org/:splat 
 /wss/                                           https://todoconta.com/web-service-sat/
 /mp/                                            https://todoconta.com/marca-personal/
 /suscribete/                                    https://mailchi.mp/todoconta/suscribete
+/taller/                                        https://taller.todoconta.com/
 
 # Tienda
 ## ETT
