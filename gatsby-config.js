@@ -189,14 +189,6 @@ module.exports = {
                 pixelId: "2517558688552094",
             },
         },
-        // Adsense.
-        // See
-        {
-            resolve: `gatsby-plugin-google-adsense`,
-            options: {
-                publisherId: `ca-pub-7017426929740089`,
-            },
-        },
         // Mailchimp
         // https://www.gatsbyjs.com/plugins/gatsby-plugin-mailchimp/
         {
