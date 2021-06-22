@@ -30,7 +30,13 @@ function AdsTodoconta() {
             name: "XML a CTPQi",
             description:
                 "Contabiliza todos tus archivos XML y genera pólizas listas para ser importadas Contpaq i® Contabilidad.",
-            url: "https://todoconta.com/xmlcontpaqi",
+            url: "https://todoconta.com/xmlcontpaq",
+        },
+        {
+            name: "Alegra",
+            description:
+                "Sistema Contable y de Facturación en la Nube, diseñado para Pymes y hecho para México.",
+            url: "https://todoconta.com/alegra",
         },
     ];
 
